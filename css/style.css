@@ -1,0 +1,228 @@
+
+  /*--------------------------------------------------------------
+# Contact form 
+--------------------------------------------------------------*/
+.contact .php-email-form {
+    width: 100%;
+    box-shadow: 0 0 24px 0 green;
+    padding: 30px;
+    background: #fff;
+  }
+  
+  .contact .php-email-form .form-group {
+    padding-bottom: 8px;
+  }
+  
+  .contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  
+  .contact .php-email-form input,
+  .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+  }
+  
+  .contact .php-email-form input {
+    height: 44px;
+  }
+  
+  .contact .php-email-form textarea {
+    padding: 10px 12px;
+  }
+  
+  .contact .php-email-form button[type=submit] {
+    background: #ffb03b;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 15px;
+  }
+  
+  .contact .php-email-form button[type=submit]:hover {
+    background: #ffa012;
+  }
+  
+  /*--------------------------------------------------------------
+# Scroll to top button
+--------------------------------------------------------------*/
+
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  
+  
+  .scroll-to-top:hover {
+    background-color: green;
+  }
+
+
+/* style for header starts */
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 40px;
+  font-size: 14px;
+  color: #555;
+  background-color:rgb(141, 137, 137);
+  padding: 10px;
+}
+.social-icons ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.social-icons li {
+  list-style: none;
+  margin-right: 10px;
+ 
+}
+.social-icons a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #eee;
+  color: #555;
+  text-align: center;
+  line-height: 30px;
+  transition: background-color 0.3s ease;
+}
+.social-icons a:hover {
+  background-color: #555;
+  color: #fff;
+}
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+.contact-info i {
+  margin-right: 5px;
+}
+.contact-info span {
+  margin-right: 10px;
+  font-size:15px;
+}
+
+
+
+/* style for header ends */
+
+
+@media (max-width: 767px) {
+  #myImg {
+    padding-top: 20px;
+    
+  }
+}
+
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+  /* Media query for desktop */
+  @media only screen and (min-width: 1025px) {
+    /* Select the div you want to hide */
+    .hide_div_desktop {
+      display: block;
+    }
+    .hide_div_ipad {
+      display: none;
+    }
+    .parent-container {
+      overflow: hidden;
+    }
+  }
+
+
+  /* Media query for iPad for footer*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Select the div you want to hide */
+  .hide_div_ipad {
+    display: block;
+    
+  } 
+  .hide_div_desktop {
+    display: none;
+    
+  } 
+   /* Hide any extra white space */
+   .parent-container {
+    overflow: hidden;
+    padding-bottom:-330px;
+  }
+}
+
+  /*Media query for mobile */
+   @media (max-width: 767px) { 
+    /* Select the div you want to hide */
+     .hide_div_ipad {
+      display: none;
+      
+    } 
+    .hide_div_mobile {
+      display: block;
+      
+    } 
+     /* Hide any extra white space */
+      .parent-container {
+      overflow: hidden;
+      padding-bottom:-330px;
+    }
+  } 
